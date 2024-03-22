@@ -1,38 +1,96 @@
 # Part 1
 ### a)
-
-
-
+grep "bulb" ./forest/*
+grep "blas" ./forest/*
+grep "beed" ./forest/*
+grep "butt" ./forest/*
+grep "char*"..."*d" ./forest/*
+grep "char*"..."*n" ./forest/*
+grep "char*"..."*er" ./forest/*
+grep "ivys" ./forest/*
+grep "meo" ./forest/*
+grep "pik" ./forest/*
+grep "jig" ./forest/*
+grep "psy" ./forest/*
+grep "sqr" ./forest/*
+grep "war" ./forest/*
 
 ### b)
-
+grep "bulb" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/bulbasaur.txt
+grep "blas" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/blastoise.txt
+grep "beed" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/beedrill.txt
+grep "butt" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/butterfree.txt
+grep "cha*"..."*ard" ./forest/* >/Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/charizard.txt
+grep "cha*"..."*eon" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/charmeleon.txt
+grep "cha*"..."*der" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/charmander.txt
+grep "ivy*"..."*ur" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/ivysaur.txt
+grep "me*"..."*th" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/meowth.txt
+grep "p*"..."*chu" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/pikachu.txt
+grep "jig*"..."*uff" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/jigglypuff.txt
+grep "psy*"..."*uck" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/psyduck.txt
+grep "ven*"..."*aur" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/venusaur.txt
+grep "sqr"..."*tle" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/venusaur.txt
+grep "war*"..."*ortle" ./forest/* > /Users/chris/pyprojects/Grep.Data.CatchEmAll2/captured/wartortle.txt
 
 
 ### c)
-
-
-
-
-
-
-
-
-
+based on [grep "half_of_pokemon_name" ./* -c]
+Bulbasaur in 1
+blastosie in 1
+butterfree in 1
+beedrill in 1
+charmander in 2
+charmeleon in 2
+charzard in 2
+ivysaur in 3
+meowth in 3
+jigglypuff in 3
+pikachu in 3
+psyduck in 4
+venusaur in 4
+squirtle in 4
+wartortle in 4
 
 
 
 
 # Part 2
 ### a)
+there are 15 pokemon
 
+searched the amount of pokemon.txt files in captured with...
+[chris@Zipcoders-MacBook-Pro-2 captured % ls -l | grep "^-" | wc -l]
 
 
 
 
 
 ### b)
+the largest pokemon are:
 
+Pikachu
+Charizard
+Beedrill
 
+based on:
+
+grep -c "...." ./captured/*
+
+./beedrill.txt:40
+./blastoise.txt:38
+./bulbasaur.txt:30
+./butterfree.txt:38
+./charizard.txt:40
+./charmander.txt:36
+./charmeleon.txt:37
+./ivysaur.txt:33
+./jigglypuff.txt:34
+./meowth.txt:33
+./pikachu.txt:40
+./psyduck.txt:37
+./squirtle.txt:34
+./venusaur.txt:32
+./wartortle.txt:37
 
 
 
